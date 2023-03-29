@@ -137,7 +137,7 @@
                 <span><a href="#" class="error"><i class="fa-solid fa-ellipsis"></i></a></span>
             </div>
             
-            <div id="cnt-both-main"></div>
+            <!-- <div id="cnt-both-main"></div> -->
             <div id="show-container">
                 <a href="#" id="show">Mostra altro</a>
             </div>
@@ -189,7 +189,12 @@
             // Nasconde tutti .tendenze dopo il nono e li fa apparire al click del link
             $('.tendenze:gt(3)').addClass('hide');
             $('#show').click(function () {
-                $('.tendenze:gt(7)').slideToggle("hide").fa;
+                $('.tendenze:gt(7)').slideToggle("hide");
+                if($(this).text() === 'Mostra altro'){
+                    $(this).text('Mostra meno');
+                }else{
+                    $(this).text('Mostra altro');
+                }
             });
 
             // Funzione per gestire il popup alert
