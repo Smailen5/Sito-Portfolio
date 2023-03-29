@@ -26,6 +26,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+        <!-- Link script JS -->
+    <script type="text/javascript" src="script.js"></script>
 
     <title>Twitter Home</title>
 
@@ -147,8 +149,8 @@
                 <p>Gli utenti di Twitter sono i primi ad apprendere le novità.</p>
             </div>
             <div class="btn-footer">
-                <button href="#" class="btn log">Accedi</button>
-                <button href="#" class="btn reg">Iscriviti</button>
+                <button id="login-btn" class="btn log">Accedi</button>
+                <button class="btn reg">Iscriviti</button>
             </div>
         </div>
 
@@ -159,51 +161,35 @@
         <div class="alert-btn">
             <button class="close-btn">Chiudi</button>
         </div>
-
     </div>
     <div id="alert-pnt" class="hidden">
         <p>Mi dispiace ma non c'&egrave altro</p>
         <div class="alert-btn">
             <button class="close-btn">Chiudi</button>
         </div>
-
     </div>
-
-    <script>
-        $(document).ready(() => {
-
-            // mi son dimenticato il title, lo aggiungo cosi
-            $('a .fa-ellipsis').attr('title', 'Altro').addClass('tooltip');
-            // Attiva Tooltipster, thema di default va bene
-            $('.tooltip').tooltipster();
-
-            // Nasconde tutti .tendenze dopo il nono e li fa apparire al click del link
-            $('.tendenze:gt(3)').addClass('hide');
-            $('#show').click(function () {
-                $('.tendenze:gt(7)').slideToggle("hide");
-                if ($(this).text() === 'Mostra altro') {
-                    $(this).text('Mostra meno');
-                } else {
-                    $(this).text('Mostra altro');
-                }
-            });
-
-            // Funzione per gestire il popup alert
-            $('.tendenze, #btn-setting, .error, .btn').click(function () {
-                if ($(this).hasClass('error')) {// Se ha class error
-                    $('#alert-pnt').removeClass('hidden');
-                    return (false);
-                } else {// Se non ha class error
-                    $('#alert').removeClass('hidden');
-                }
-            });
-            // Il bottone meglio fuori dalla funzione popup
-            $('.close-btn').click(function () {
-                $('#alert, #alert-pnt').addClass('hidden');
-            });
-
-        });
-    </script>
+    <div class="back-grey">
+            <div id="login-form" class="hidde">
+        
+        <form action="">
+            <a href="#" id="logo"><i class="fa-brands fa-twitter"></i></a>
+            <h2>Accedi a Twitter</h2>
+            <button>Accedi con Google</button>
+            <br>
+            <button>Accedi con Apple</button>
+            <br>
+            oppure
+            <input type="text">
+            <button>Avanti</button>
+            <br>
+            <button>Password dimenticata?</button>
+            <br>
+            Non hai un account?<a href="http://">Iscriviti</a>
+        </form>
+    </div>
+        </div>
+    
+   
 </body>
 
 </html>
