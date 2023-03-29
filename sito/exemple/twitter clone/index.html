@@ -27,9 +27,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
-
     <title>Twitter Home</title>
-
 
 </head>
 
@@ -42,9 +40,7 @@
             <a href="#"><i class="fa-solid fa-gear setting"></i></a>
         </div>
 
-
     </aside>
-
 
     <main>
         <div id="height-container">
@@ -53,7 +49,6 @@
                     <i class="fa-solid fa-magnifying-glass setting" id="glass"></i>
                     <input type="text" placeholder="Cerca su Twitter" id="search-input">
                 </label>
-
                 <a href="#" id="btn-setting"><i class="fa-solid fa-gear setting btn-setting"></i></a>
             </nav>
             <h2>Tendenze per te</h2>
@@ -87,7 +82,6 @@
                 <div class="twt"><span>741.000 Tweet</span></div>
                 <span><a href="#" class="error"><i class="fa-solid fa-ellipsis"></i></a></span>
             </div>
-
             <div class="tendenze">
                 <div class="txt"><span>Di tendenza nella seguente zona: Italia</span></div>
                 <div class="twt"><span><strong>Arisa</strong></span></div>
@@ -136,11 +130,11 @@
                 <div class="twt"><span></span></div>
                 <span><a href="#" class="error"><i class="fa-solid fa-ellipsis"></i></a></span>
             </div>
-            
-            <!-- <div id="cnt-both-main"></div> -->
+
             <div id="show-container">
                 <a href="#" id="show">Mostra altro</a>
             </div>
+            <!-- <div id="cnt-both-main"></div> -->
             <div id="cnt-both-main"></div>
         </div>
 
@@ -175,11 +169,8 @@
 
     </div>
 
-
     <script>
         $(document).ready(() => {
-
-
 
             // mi son dimenticato il title, lo aggiungo cosi
             $('a .fa-ellipsis').attr('title', 'Altro').addClass('tooltip');
@@ -190,9 +181,9 @@
             $('.tendenze:gt(3)').addClass('hide');
             $('#show').click(function () {
                 $('.tendenze:gt(7)').slideToggle("hide");
-                if($(this).text() === 'Mostra altro'){
+                if ($(this).text() === 'Mostra altro') {
                     $(this).text('Mostra meno');
-                }else{
+                } else {
                     $(this).text('Mostra altro');
                 }
             });
@@ -211,12 +202,7 @@
                 $('#alert, #alert-pnt').addClass('hidden');
             });
 
-
-
-
-
         });
-
     </script>
 </body>
 
