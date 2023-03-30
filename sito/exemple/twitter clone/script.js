@@ -4,11 +4,13 @@ $(document).ready(() => {
     $('a .fa-ellipsis').attr('title', 'Altro').addClass('tooltip');
     // Attiva Tooltipster, thema di default va bene
     $('.tooltip').tooltipster();
+    $('.cnt-aside > *').addClass('icon');
 
-    // Nasconde tutti .tendenze dopo il nono e li fa apparire al click del link
+    // Nasconde tutti classe tendenze dopo il settimo figlio e li fa apparire al click del link
     $('.tendenze:gt(3)').addClass('hidden');
     $('#show').click(function () {
         $('.tendenze:gt(7)').slideToggle("hidden");
+        // Cambia il testo del link "Mostra altro" in "Mostra meno" al click
         if ($(this).text() === 'Mostra altro') {
             $(this).text('Mostra meno');
         } else {
@@ -17,11 +19,13 @@ $(document).ready(() => {
     });
 
     // Funzione per gestire il popup
-    $('.tendenze, #btn-setting, .error').click(function () {
-        if ($(this).hasClass('error')) {// Se ha class error
+    $('.tendenze, #btn-setting,  .icon, .error').click(function () {
+        // Se ha class error
+        if ($(this).hasClass('error')) {
             $('#alert-pnt').removeClass('hidden');
             return (false);
-        } else {// Se non ha class error
+        } else {
+            // Se non ha class error
             $('#alert').removeClass('hidden');
         }
     });
@@ -29,9 +33,16 @@ $(document).ready(() => {
     $('.close-btn').click(function () {
         $('#alert, #alert-pnt').addClass('hidden');
     });
-    
-document.getElementById("login-btn").addEventListener("click", function() {
-  document.getElementById("login-form").classList.remove("hidden");
-});
+
+    // Variabili con ciclo for per gestire tuti i figli del div id back-ctn-form per rimuovere tutte le classi hidden
+    var backForm = document.getElementById("back-ctn-form");
+    var children = backForm.querySelectorAll("*");
+    for (var i = 0; i < children.length; i++) {
+        children[i].classList.remove("hidden");
+    }
+    // Gestisce il click al bottone Login
+    document.getElementById("login-btn").addEventListener("click", function () {
+        document.getElementById("back-ctn-form").classList.remove("hidden");
+    });
 
 });
