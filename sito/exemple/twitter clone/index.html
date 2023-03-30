@@ -141,21 +141,22 @@
         </div>
 
     </main>
+    <!-- Footer -->
     <div id="fixed-footer">
-
         <div id="footer">
             <div class="text-footer">
                 <h2>Non perderti ciò che c'è di nuovo</h2>
                 <p>Gli utenti di Twitter sono i primi ad apprendere le novità.</p>
             </div>
+            <!-- Bottoni footer Accedi e Iscriviti -->
             <div class="btn-footer">
                 <button id="login-btn" class="btn log">Accedi</button>
-                <button class="btn reg">Iscriviti</button>
+                <button id="register-btn" class="btn reg">Iscriviti</button>
             </div>
         </div>
 
     </div>
-
+    <!-- Alert per i link mancanti -->
     <div id="alert" class="hidden">
         <p>Il link a cui stai cercando di accedere non &egrave disponibile</p>
         <div class="alert-btn">
@@ -168,7 +169,8 @@
             <button class="close-btn">Chiudi</button>
         </div>
     </div>
-    <div class="back-grey hidden" id="back-ctn-form">
+    <!-- Form di iscrizione -->
+    <div class="back-grey hidden" id="back-ctn-log">
         <div id="login-form" class="hidden">
             <form action="">
                 <div class="logo">
@@ -188,16 +190,41 @@
                     <input type="text">
                     <div class="button avanti">Avanti</div>
                     <div class="button">Password dimenticata?</div>
-                    <div class="text-from">
-                        Non hai un account? <a href="#">Iscriviti</a>
+                    <div class="text-from">Non hai un account? <a href="#">Iscriviti</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Form di registrazione -->
+    <div class="back-grey hidden" id="back-ctn-reg">
+        <div id="register-form" class="hidden">
+            <form action="">
+                <div class="logo">
+                    <a href="#" id="logo"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="ctn-form">
+                    <h2>Iscriviti adesso a Twitter</h2>
+                    <div>
+                        <div class="button"><i class="fa-brands fa-google"></i>Registrati con Google</div>
+                        <div class="button"><i class="fa-brands fa-apple"></i>Registrati con Apple</div>
+                        <div class="wrapper">
+                            <div class="line-left"></div>
+                            <p>oppure</p>
+                            <div class="line-right"></div>
+                        </div>
+                        <div class="button avanti">Crea account</div>
+                        <div class="text-from">Iscrivendoti accetti i <a href="#">Termini di servizio</a>
+                            e l'<a href="#">Informativa sulla privacy</a>,
+                            incluso l'<a href="#">Utilizzo dei cookie</a>.
+                        </div>
+                        <div class="text-from">Hai gia un account? <a href="#">Accedi</a></div>
+
                     </div>
                 </div>
-
-
+            </form>
         </div>
-        </form>
     </div>
-    </div>
+
 
 
 </body>

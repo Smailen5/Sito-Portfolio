@@ -175,9 +175,6 @@ div#alert-pnt button.close-btn {
     /* flex-direction: column; */
 }
 
-
-
-
 /* Contenitore del form */
 form .ctn-form{
     display: flex;
@@ -190,14 +187,17 @@ form .ctn-form{
     margin: 0 auto;
     /* background-color: black; */
 }
+/* Contenitore del Logo form Accedi */
 form .logo{
     height: 50px;
 }
+/* Logo del form Accedi */
 form .logo #logo{
     font-size: 2em;
 }
-
-#login-form{
+/* Form Accedi */
+#login-form,
+#register-form{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -217,7 +217,7 @@ form .logo #logo{
     overflow: hidden;
 }
 
-/* Tutti i button del form */
+/* Tutti i button del form Accedi*/
 form .button{
     display: flex;
     align-items: center;
@@ -231,11 +231,11 @@ form .button{
     margin: 10px 0;
     cursor: pointer;
 }
-/* Sfumatura button al hover */
+/* Sfumatura button al hover form Accedi*/
 form .button:hover{background-color: rgba(204, 204, 204, 0.3);}
 form .button.avanti:hover{background-color: rgba(0, 0, 0, 0.8);}
 
-/* Tutti input del form */
+/* Tutti input del form Accedi*/
 form input{
     width: 20rem;
     border-radius: initial;
@@ -244,12 +244,12 @@ form input{
     /* padding: 10px 0; */
     margin-bottom: 10px;
 }
-/* Logo nel div button */
+/* Logo nel div button form Accedi*/
 .button .fa-brands{
     margin-right: 10px;
     font-size: 25px;
 }
-/* Logo Google nel div button */
+/* Logo Google nel div button form Accedi*/
 .button .fa-brands.fa-google{
     font-size: 20px;
     font-size: 20px;
@@ -257,6 +257,7 @@ form input{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+/* Bottone Avanti del form Accedi */
 div .button.avanti{
     color: #fff;
     background-color: black;

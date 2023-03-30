@@ -29,20 +29,40 @@ $(document).ready(() => {
             $('#alert').removeClass('hidden');
         }
     });
-    // Il bottone meglio fuori dalla funzione popup
+    // Il bottone meglio metterlo fuori dalla funzione popup
     $('.close-btn').click(function () {
         $('#alert, #alert-pnt').addClass('hidden');
     });
 
-    // Variabili con ciclo for per gestire tuti i figli del div id back-ctn-form per rimuovere tutte le classi hidden
-    var backForm = document.getElementById("back-ctn-form");
-    var children = backForm.querySelectorAll("*");
+    // Variabili con ciclo for per gestire tutti i figli del div id back-ctn-log per rimuovere tutte le classi hidden
+    var backLog = document.querySelector("#back-ctn-log");
+    var children = backLog.querySelectorAll("*");
     for (var i = 0; i < children.length; i++) {
         children[i].classList.remove("hidden");
     }
     // Gestisce il click al bottone Login
-    document.getElementById("login-btn").addEventListener("click", function () {
-        document.getElementById("back-ctn-form").classList.remove("hidden");
+    document.querySelector("#login-btn").addEventListener("click", function () {
+        document.querySelector("#back-ctn-log").classList.remove("hidden");
     });
+
+    // Variabili con ciclo for per gestire tutti i figli del div id back-ctn-reg per rimuovere tutte le classi hidden
+    var backReg = document.querySelector("#back-ctn-reg");
+    var children = backReg.querySelectorAll("*");
+    for (var i = 0; i < children.length; i++) {
+        children[i].classList.remove("hidden");
+    }
+    // Gestisce il click del bottone Iscriviti
+    document.querySelector("#register-btn").addEventListener("click", function () {
+        document.querySelector("#back-ctn-reg").classList.remove("hidden");
+    });
+
+
+
+
+
+
+
+
+
 
 });
