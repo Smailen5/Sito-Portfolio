@@ -55,6 +55,22 @@ $(document).ready(() => {
     document.querySelector("#register-btn").addEventListener("click", function () {
         document.querySelector("#back-ctn-reg").classList.remove("hidden");
     });
+    // X close per chiudere il form
+    $('.material-symbols-outlined').click(function () {
+        var regForm = $('#back-ctn-reg');
+        var logForm = $('#back-ctn-log');
+        // If per X close per form registrazione
+        if (!regForm.hasClass('hidden')) {
+            regForm.addClass('hidden');
+        }
+        // If per X close per form accedi
+        if (!logForm.hasClass('hidden')) {
+            logForm.addClass('hidden');
+        }
+    });
+
+
+
 
 
 

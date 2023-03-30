@@ -26,6 +26,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <!-- Google Icone -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- Link script JS -->
     <script type="text/javascript" src="script.js"></script>
 
@@ -169,29 +172,40 @@
             <button class="close-btn">Chiudi</button>
         </div>
     </div>
-    <!-- Form di iscrizione -->
+    <!-- Form di accesso -->
     <div class="back-grey hidden" id="back-ctn-log">
         <div id="login-form" class="hidden">
             <form action="">
                 <div class="logo">
-                    <a href="#" id="logo"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" id="logo">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
-                <div class="ctn-form">
-                    <h2>Accedi a Twitter</h2>
-                    <div>
-                        <div class="button"><i class="fa-brands fa-google"></i>Accedi con Google</div>
+                <div class="container">
+                    <div class="ctn-form">
+                        <h2>Accedi a Twitter</h2>
+                        <div>
+                            <div class="button"><i class="fa-brands fa-google"></i>Accedi con Google</div>
+
+                            <div class="button"><i class="fa-brands fa-apple"></i>Accedi con Apple</div>
+                            <div class="wrapper">
+                                <div class="line-left"></div>
+                                <p>oppure</p>
+                                <div class="line-right"></div>
+                            </div>
+                            <input type="text" placeholder="Numero, email o nome utente">
+                            <div class="button avanti">Avanti</div>
+                            <div class="text-form">
+                                <div class="button">Password dimenticata?</div>
+                            </div>
+                            <div class="text-form remember no-pdn">Non hai un account? <a href="#" class="no-pdn">Iscriviti</a></div>
+                        </div>
                     </div>
-                    <div class="button"><i class="fa-brands fa-apple"></i>Accedi con Apple</div>
-                    <div class="wrapper">
-                        <div class="line-left"></div>
-                        <p>oppure</p>
-                        <div class="line-right"></div>
-                    </div>
-                    <input type="text">
-                    <div class="button avanti">Avanti</div>
-                    <div class="button">Password dimenticata?</div>
-                    <div class="text-from">Non hai un account? <a href="#">Iscriviti</a></div>
                 </div>
+
             </form>
         </div>
     </div>
@@ -200,27 +214,34 @@
         <div id="register-form" class="hidden">
             <form action="">
                 <div class="logo">
-                    <a href="#" id="logo"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" id="logo">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
-                <div class="ctn-form">
-                    <h2>Iscriviti adesso a Twitter</h2>
-                    <div>
-                        <div class="button"><i class="fa-brands fa-google"></i>Registrati con Google</div>
-                        <div class="button"><i class="fa-brands fa-apple"></i>Registrati con Apple</div>
-                        <div class="wrapper">
-                            <div class="line-left"></div>
-                            <p>oppure</p>
-                            <div class="line-right"></div>
+                <div class="container">
+                    <div class="ctn-form">
+                        <h2>Iscriviti adesso a Twitter</h2>
+                        <div>
+                            <div class="button"><i class="fa-brands fa-google"></i>Registrati con Google</div>
+                            <div class="button"><i class="fa-brands fa-apple"></i>Registrati con Apple</div>
+                            <div class="wrapper">
+                                <div class="line-left"></div>
+                                <p>oppure</p>
+                                <div class="line-right"></div>
+                            </div>
+                            <div class="button avanti">Crea account</div>
+                            <div class="text-form">Iscrivendoti accetti i <a href="#">Termini di servizio</a>
+                                e l'<a href="#">Informativa sulla privacy</a>,
+                                incluso l'<a href="#">Utilizzo dei cookie</a>.
+                            </div>
+                            <div class="text-form remember no-pdn">Hai gia un account? <a href="#" class="no-pdn">Accedi</a></div>
                         </div>
-                        <div class="button avanti">Crea account</div>
-                        <div class="text-from">Iscrivendoti accetti i <a href="#">Termini di servizio</a>
-                            e l'<a href="#">Informativa sulla privacy</a>,
-                            incluso l'<a href="#">Utilizzo dei cookie</a>.
-                        </div>
-                        <div class="text-from">Hai gia un account? <a href="#">Accedi</a></div>
-
                     </div>
                 </div>
+
             </form>
         </div>
     </div>
