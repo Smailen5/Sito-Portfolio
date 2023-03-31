@@ -5,7 +5,7 @@ $(document).ready(() => {
         // $('#tendina')
         
     })
-    $('#tendina').addClass('hidden')
+    // $('#tendina').addClass('hidden')
     
 
 

@@ -53,6 +53,7 @@
     transition: transform 0.5s, width 0.5s;
 }
 
+/* fottute linee menu tendina */
 .menu .line-1 {
     transform: translate(-75%, -10px);
 }
@@ -89,7 +90,7 @@
     top: 8vh;
     /* display: flex; */
     /* justify-content: flex-end; */
-    border: 1px green solid;
+    /* border: 1px green solid; */
     background-color: #0d0024;
     z-index: 100;
     width: 100%;
@@ -147,11 +148,6 @@ main span {
     /* margin: 0 10px; */
 }
 
-.background span :nth-child(2) {
-    padding-bottom: 20px;
-    /* color: red; */
-}
-
 .background p {
     /* color: red; */
     font-size: 24px;
@@ -194,10 +190,57 @@ footer div a {
     height: 50px;
 }
 
+/* Testo footer dopo le icone */
 footer div span:last-child {
     /* color: red; */
     align-items: center;
     position: absolute;
     bottom: 10px;
     padding: 15px 0 0 10px;
+}
+
+/* ---------------------------------------- Media query ---------------------------------------- */
+@media (min-width: 768px) {
+
+    /* main span :nth-child(2){ padding: 0;color: red;} */
+    #menu {
+        display: none;
+    }
+
+    /* #tendina ul{display: block;color: red;} */
+    #menu-nav {
+        color: red;
+        /* border: 1px red solid; */
+        display: flex;
+        width: 100%;
+        height: 40px;
+        /* flex-direction: row-reverse; */
+        justify-content: center;
+        align-items: center
+    }
+
+    body div.container {
+        /* border: 1px red solid; */
+        height: 7vh;
+    }
+
+    menu li {
+        display: inline;
+        padding: 0 40px;
+    }
+
+    menu a {
+        text-decoration: none;
+    }
+
+    main span :nth-child(2) {
+        /* color: red; */
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main span :nth-child(2) {
+        padding-bottom: 20px;
+    }
 }
