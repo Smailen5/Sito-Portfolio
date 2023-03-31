@@ -5,6 +5,10 @@ $(document).ready(() => {
         // $('#tendina')
         
     })
+    $('#menu-nav ul :last-child').click(()=>{
+        alert("Questo link non è disponibile")
+        console.log("Link non disponibile");
+    })
     // $('#tendina').addClass('hidden')
     
 
