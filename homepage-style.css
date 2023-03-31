@@ -53,7 +53,6 @@
     transition: transform 0.5s, width 0.5s;
 }
 
-/* fottute linee menu tendina */
 .menu .line-1 {
     transform: translate(-75%, -10px);
 }
@@ -90,7 +89,7 @@
     top: 8vh;
     /* display: flex; */
     /* justify-content: flex-end; */
-    /* border: 1px green solid; */
+    border: 1px green solid;
     background-color: #0d0024;
     z-index: 100;
     width: 100%;
@@ -148,6 +147,11 @@ main span {
     /* margin: 0 10px; */
 }
 
+.background span :nth-child(2) {
+    padding-bottom: 20px;
+    /* color: red; */
+}
+
 .background p {
     /* color: red; */
     font-size: 24px;
@@ -190,7 +194,6 @@ footer div a {
     height: 50px;
 }
 
-/* Testo footer dopo le icone */
 footer div span:last-child {
     /* color: red; */
     align-items: center;
